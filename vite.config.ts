@@ -4,8 +4,9 @@ import vue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: 'yoto-share',
+  base: '/yoto-share/',
   build: {
+    assetsInlineLimit: 0,     // Ensure proper MIME types
     outDir: 'dist',
     sourcemap: true,
     cssCodeSplit: true,
