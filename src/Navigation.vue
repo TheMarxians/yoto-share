@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import type { RouteRecord } from '@/types';
+import type { RouteRecord } from 'shadcn-ui/types';
 import routes from '@/routes.ts';
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';

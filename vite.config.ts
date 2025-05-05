@@ -18,6 +18,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src/'),
+      '@shadcn-ui': path.resolve(__dirname, 'node_modules/shadcn-ui/src'),
+      '@geonative/ui': path.resolve(__dirname, 'node_modules/shadcn-ui/src'),
     },
   },
 });

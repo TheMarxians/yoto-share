@@ -2200,6 +2200,25 @@ semver@~7.5.4:
   dependencies:
     lru-cache "^6.0.0"
 
+"shadcn-ui@https://github.com/iznogoudatall/shadcn-ui.git":
+  version "0.0.0"
+  resolved "https://github.com/iznogoudatall/shadcn-ui.git#fe12cfb070148fa9082d10468c25c166e31585a1"
+  dependencies:
+    "@heroicons/vue" "^2.2.0"
+    "@tailwindcss/vite" "^4.1.1"
+    "@vueuse/core" "^13.0.0"
+    class-variance-authority "^0.7.1"
+    clsx "^2.1.1"
+    dompurify "^3.2.5"
+    lucide-vue-next "^0.487.0"
+    marked "^15.0.7"
+    reka-ui "^2.2.0"
+    tailwind-merge "^3.1.0"
+    tailwindcss "^4.1.1"
+    tw-animate-css "^1.2.5"
+    vue "^3.5.13"
+    vue-sonner "^1.3.2"
+
 shebang-command@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-2.0.0.tgz#ccd0af4f8835fbdc265b82461aaf0c36663f34ea"

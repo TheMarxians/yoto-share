@@ -1,5 +1,5 @@
-import type { RouteRecord } from '@/types';
-import { createRoute } from '@/helpers';
+import type { RouteRecord } from '@shadcn-ui/types';
+import { createRoute } from '@shadcn-ui/helpers';
 
 const routes: Array<RouteRecord> = [
   createRoute({
