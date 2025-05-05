@@ -2200,9 +2200,9 @@ semver@~7.5.4:
   dependencies:
     lru-cache "^6.0.0"
 
-"shadcn-ui@https://github.com/iznogoudatall/shadcn-ui.git":
+"shadcn-ui@https://github.com/iznogoudatall/shadcn-ui.git#v.0.0.2":
   version "0.0.0"
-  resolved "https://github.com/iznogoudatall/shadcn-ui.git#fe12cfb070148fa9082d10468c25c166e31585a1"
+  resolved "https://github.com/iznogoudatall/shadcn-ui.git#157c82282ead38c24a354fbd5027158a7981f063"
   dependencies:
     "@heroicons/vue" "^2.2.0"
     "@tailwindcss/vite" "^4.1.1"
