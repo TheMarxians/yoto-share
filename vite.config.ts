@@ -4,7 +4,8 @@ import vue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/yoto-share/',
+  // Change base in dev or prod
+  base: process.env.NODE_ENV === 'production' ? '/yoto-share/' : '/',
   build: {
     assetsInlineLimit: 0, // Ensure proper MIME types
     outDir: 'dist',

@@ -7,7 +7,7 @@ const routes: RouteRecordRaw[] = [
   createRoute({
     path: '/',
     name: 'home',
-    component: () => import('./views/Home.vue'),
+    component: () => import('@/views/Home.vue'),
     meta: {
       menuLabel: 'Home',
       showInMenu: true,
@@ -17,7 +17,7 @@ const routes: RouteRecordRaw[] = [
   createRoute({
     path: '/:pathMatch(.*)*',
     name: 'not-found',
-    component: () => import('./views/NotFound.vue'),
+    component: () => import('@/views/NotFound.vue'),
     meta: {
       menuLabel: 'Not Found',
       showInMenu: false,

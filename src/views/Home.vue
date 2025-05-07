@@ -2,6 +2,9 @@
   <div class="flex flex-col items-center w-full">
     <div class="flex flex-col items-center justify-center w-full max-w-4xl px-4 mx-auto">
       <Markdown :content="content" class="markdown-body" />
+      <Card>
+        test
+      </Card>
     </div>
   </div>
 </template>
@@ -10,6 +13,7 @@
 import { Markdown } from '@shadcn-ui/components';
 import { ref } from 'vue';
 import readmeContent from '../../README.md?raw';
+import { Card } from '@/components';
 
 const content = ref(readmeContent);
 </script>
