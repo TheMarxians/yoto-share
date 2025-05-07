@@ -1,19 +1,27 @@
-import type { RouteRecord } from '@shadcn-ui/types';
-import { createRoute } from '@shadcn-ui/helpers';
+import type { RouteRecordRaw } from 'vue-router';
+import { createRoute, setDefaultLayout } from '@shadcn-ui/helpers';
+import { AppLayout } from '@/components';
 
-const routes: Array<RouteRecord> = [
+setDefaultLayout(AppLayout);
+const routes: RouteRecordRaw[] = [
   createRoute({
     path: '/',
     name: 'home',
     component: () => import('./views/Home.vue'),
-    menuLabel: 'Home',
+    meta: {
+      menuLabel: 'Home',
+      showInMenu: true,
+    },
   }),
   // Catch all unmatched routes
   createRoute({
     path: '/:pathMatch(.*)*',
     name: 'not-found',
     component: () => import('./views/NotFound.vue'),
-    showInMenu: false,
+    meta: {
+      menuLabel: 'Not Found',
+      showInMenu: false,
+    }
   }),
 ];
 
