@@ -21,7 +21,7 @@ const routes: RouteRecordRaw[] = [
     meta: {
       menuLabel: 'Not Found',
       showInMenu: false,
-    }
+    },
   }),
 ];
 

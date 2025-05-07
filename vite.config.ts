@@ -6,15 +6,12 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   base: '/yoto-share/',
   build: {
-    assetsInlineLimit: 0,     // Ensure proper MIME types
+    assetsInlineLimit: 0, // Ensure proper MIME types
     outDir: 'dist',
     sourcemap: true,
     cssCodeSplit: true,
   },
-  plugins: [
-    vue(),
-    tailwindcss(),
-  ],
+  plugins: [vue(), tailwindcss()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src/'),
